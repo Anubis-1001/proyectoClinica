@@ -10,6 +10,6 @@ FROM openjdk:17-jdk-slim
 
 EXPOSE 9009
 
-COPY --from=build /build/libs/demoBackend.zip app.jar
+COPY --from=build /build/libs/demoProyectoClinica-0.0.1-SNAPSHOT.jar app.jar
 
-ENTRYPOINT ["java", "-jar"]
+ENTRYPOINT ["java", "-jar", "app.jar"]

@@ -10,6 +10,4 @@ FROM openjdk:17-jdk-slim
 
 EXPOSE 9009
 
-COPY --from=build /build/libs/demo-1.jar app.jar
-
 ENTRYPOINT ["java", "-jar", "app.jar"]
